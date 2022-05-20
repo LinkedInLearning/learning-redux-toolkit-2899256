@@ -1,0 +1,43 @@
+.navbar {
+  background: #7a1b37;
+  border-radius: 0;
+  color: #fff;
+  height: 6.5rem;
+
+  .selected {
+    i {
+      color: #e94d4d;
+    }
+  }
+
+  i {
+    font-size: 3rem;
+    color: #fff;
+    float: right;
+    margin: 1rem;
+
+    &:hover {
+      color: #e9e9e9;
+    }
+  }
+
+  i.bi-cart3 {
+    margin-right: 7rem;
+  }
+
+  i.bi-shop-window {
+    float: left;
+    margin-left: 7rem;
+  }
+
+  .cart-number {
+    position: absolute;
+    right: 6.3rem;
+    top: 1.2rem;
+    border-radius: 50%;
+    color: #fff;
+    background: #337ab7;
+    padding: 1rem 0.6rem;
+    font-size: 1.2rem;
+  }
+}

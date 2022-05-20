@@ -1,0 +1,34 @@
+.product-catalogue {
+  .wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    background: #fff;
+    height: 50rem;
+    padding-top: 2.5rem;
+  }
+
+  .card-img-top {
+    height: 27rem;
+    width: 27rem;
+    object-fit: cover;
+  }
+
+  .card-title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .qty-buttons {
+    margin-top: 2rem;
+  }
+
+  .btn.qty-left {
+    margin-left: 1rem;
+  }
+
+  .btn.qty-right {
+    margin-right: 1rem;
+  }
+}
