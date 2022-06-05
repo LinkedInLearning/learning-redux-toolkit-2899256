@@ -1,7 +1,7 @@
 import productList from '../data/productList'
 import '../styles/home.scss'
 
-const ProductCatalogue = () => {
+const Home = () => {
   return (
     <div className="container product-catalogue">
       <div className="row">
@@ -31,4 +31,4 @@ const ProductCatalogue = () => {
   )
 }
 
-export default ProductCatalogue
+export default Home
