@@ -1,20 +1,15 @@
-import productList from '../data/productList'
+import productList from '../data/productList.json'
 import '../styles/home.scss'
 
 const Home = () => {
   return (
     <div className="container product-catalogue">
       <div className="row">
-        {productList.map((product) => {
+        {productList.products.map((product) => {
           return (
             <div className="wrapper col-md-4" key={product.id}>
               <div className="card">
-                <img
-                  className="card-img-top center-block"
-                  // @ts-ignore
-                  src={product.imageUrl}
-                  alt="Card cap"
-                />
+                <img className="card-img-top center-block" src={product.imageUrl} alt="Card cap" />
 
                 <div className="card-body text-center">
                   <h5 className="card-title">{product.name}</h5>

@@ -1,4 +1,4 @@
-import productList from '../data/productList'
+import productList from '../data/productList.json'
 import '../styles/cart.scss'
 
 const Cart = () => {
@@ -6,14 +6,9 @@ const Cart = () => {
     <div className="cart">
       <div className="cart-product">
         <h3 className="header">Items in cart</h3>
-        {productList.map((product) => (
+        {productList.products.map((product) => (
           <div key={product.id} className="row">
-            <img
-              className="item-image"
-              // @ts-ignore
-              src={product.imageUrl}
-              alt="product"
-            />
+            <img className="item-image" src={product.imageUrl} alt="product" />
 
             <div className="item-info">
               <h4>{product.name}</h4>
